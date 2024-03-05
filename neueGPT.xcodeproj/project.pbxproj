@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0152DB62B96D9FD0030CDF3 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = C0152DB52B96D9FD0030CDF3 /* SwiftUIIntrospect */; };
+		C0152DB82B96E6200030CDF3 /* ThreadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0152DB72B96E6200030CDF3 /* ThreadList.swift */; };
+		C0152DBA2B96E7630030CDF3 /* BottomThreadCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0152DB92B96E7630030CDF3 /* BottomThreadCreator.swift */; };
+		C0152DBD2B96E8AB0030CDF3 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = C0152DBC2B96E8AB0030CDF3 /* OpenAI */; };
+		C0152DBF2B96EA090030CDF3 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0152DBE2B96EA090030CDF3 /* BottomSheet.swift */; };
+		C06D8DF12B96672300D9F563 /* neueGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8DF02B96672300D9F563 /* neueGPTApp.swift */; };
+		C06D8DF32B96672300D9F563 /* ThreadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8DF22B96672300D9F563 /* ThreadsView.swift */; };
+		C06D8DF52B96672400D9F563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06D8DF42B96672400D9F563 /* Assets.xcassets */; };
+		C06D8DF82B96672400D9F563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06D8DF72B96672400D9F563 /* Preview Assets.xcassets */; };
+		C06D8E012B9668FD00D9F563 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8E002B9668FD00D9F563 /* Thread.swift */; };
+		C06D8E042B966AE700D9F563 /* ThreadRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8E032B966AE700D9F563 /* ThreadRow.swift */; };
+		C06D8E072B96734000D9F563 /* ProgressAwareScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8E062B96734000D9F563 /* ProgressAwareScrollView.swift */; };
+		C06D8E0A2B96743200D9F563 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8E092B96743200D9F563 /* ColorExt.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C0152DB72B96E6200030CDF3 /* ThreadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadList.swift; sourceTree = "<group>"; };
+		C0152DB92B96E7630030CDF3 /* BottomThreadCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomThreadCreator.swift; sourceTree = "<group>"; };
+		C0152DBE2B96EA090030CDF3 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		C06D8DED2B96672300D9F563 /* neueGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neueGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06D8DF02B96672300D9F563 /* neueGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neueGPTApp.swift; sourceTree = "<group>"; };
+		C06D8DF22B96672300D9F563 /* ThreadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsView.swift; sourceTree = "<group>"; };
+		C06D8DF42B96672400D9F563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C06D8DF72B96672400D9F563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C06D8E002B9668FD00D9F563 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		C06D8E032B966AE700D9F563 /* ThreadRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadRow.swift; sourceTree = "<group>"; };
+		C06D8E062B96734000D9F563 /* ProgressAwareScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressAwareScrollView.swift; sourceTree = "<group>"; };
+		C06D8E092B96743200D9F563 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C06D8DEA2B96672300D9F563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0152DBD2B96E8AB0030CDF3 /* OpenAI in Frameworks */,
+				C0152DB62B96D9FD0030CDF3 /* SwiftUIIntrospect in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C06D8DE42B96672300D9F563 = {
+			isa = PBXGroup;
+			children = (
+				C06D8DEF2B96672300D9F563 /* neueGPT */,
+				C06D8DEE2B96672300D9F563 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C06D8DEE2B96672300D9F563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C06D8DED2B96672300D9F563 /* neueGPT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C06D8DEF2B96672300D9F563 /* neueGPT */ = {
+			isa = PBXGroup;
+			children = (
+				C06D8DFF2B9668EA00D9F563 /* Models */,
+				C06D8E082B96742800D9F563 /* Support */,
+				C06D8DFE2B9668E100D9F563 /* Views */,
+				C06D8DF02B96672300D9F563 /* neueGPTApp.swift */,
+				C06D8DF42B96672400D9F563 /* Assets.xcassets */,
+				C06D8DF62B96672400D9F563 /* Preview Content */,
+			);
+			path = neueGPT;
+			sourceTree = "<group>";
+		};
+		C06D8DF62B96672400D9F563 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C06D8DF72B96672400D9F563 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C06D8DFE2B9668E100D9F563 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C06D8E052B96732F00D9F563 /* Helpers */,
+				C06D8E022B966ADB00D9F563 /* Threads */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C06D8DFF2B9668EA00D9F563 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C06D8E002B9668FD00D9F563 /* Thread.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C06D8E022B966ADB00D9F563 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				C06D8E032B966AE700D9F563 /* ThreadRow.swift */,
+				C0152DB72B96E6200030CDF3 /* ThreadList.swift */,
+				C06D8DF22B96672300D9F563 /* ThreadsView.swift */,
+				C0152DB92B96E7630030CDF3 /* BottomThreadCreator.swift */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
+		C06D8E052B96732F00D9F563 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C06D8E062B96734000D9F563 /* ProgressAwareScrollView.swift */,
+				C0152DBE2B96EA090030CDF3 /* BottomSheet.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C06D8E082B96742800D9F563 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C06D8E092B96743200D9F563 /* ColorExt.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C06D8DEC2B96672300D9F563 /* neueGPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C06D8DFB2B96672400D9F563 /* Build configuration list for PBXNativeTarget "neueGPT" */;
+			buildPhases = (
+				C06D8DE92B96672300D9F563 /* Sources */,
+				C06D8DEA2B96672300D9F563 /* Frameworks */,
+				C06D8DEB2B96672300D9F563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = neueGPT;
+			packageProductDependencies = (
+				C0152DB52B96D9FD0030CDF3 /* SwiftUIIntrospect */,
+				C0152DBC2B96E8AB0030CDF3 /* OpenAI */,
+			);
+			productName = neueGPT;
+			productReference = C06D8DED2B96672300D9F563 /* neueGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C06D8DE52B96672300D9F563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C06D8DEC2B96672300D9F563 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = C06D8DE82B96672300D9F563 /* Build configuration list for PBXProject "neueGPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C06D8DE42B96672300D9F563;
+			packageReferences = (
+				C0152DB42B96D9FD0030CDF3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				C0152DBB2B96E8AB0030CDF3 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = C06D8DEE2B96672300D9F563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C06D8DEC2B96672300D9F563 /* neueGPT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C06D8DEB2B96672300D9F563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C06D8DF82B96672400D9F563 /* Preview Assets.xcassets in Resources */,
+				C06D8DF52B96672400D9F563 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C06D8DE92B96672300D9F563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C06D8DF32B96672300D9F563 /* ThreadsView.swift in Sources */,
+				C0152DBF2B96EA090030CDF3 /* BottomSheet.swift in Sources */,
+				C0152DBA2B96E7630030CDF3 /* BottomThreadCreator.swift in Sources */,
+				C06D8E0A2B96743200D9F563 /* ColorExt.swift in Sources */,
+				C06D8E012B9668FD00D9F563 /* Thread.swift in Sources */,
+				C06D8E072B96734000D9F563 /* ProgressAwareScrollView.swift in Sources */,
+				C0152DB82B96E6200030CDF3 /* ThreadList.swift in Sources */,
+				C06D8E042B966AE700D9F563 /* ThreadRow.swift in Sources */,
+				C06D8DF12B96672300D9F563 /* neueGPTApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C06D8DF92B96672400D9F563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C06D8DFA2B96672400D9F563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C06D8DFC2B96672400D9F563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"neueGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = neueGPT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = build.miguel.neueGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C06D8DFD2B96672400D9F563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"neueGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = neueGPT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = build.miguel.neueGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C06D8DE82B96672300D9F563 /* Build configuration list for PBXProject "neueGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C06D8DF92B96672400D9F563 /* Debug */,
+				C06D8DFA2B96672400D9F563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C06D8DFB2B96672400D9F563 /* Build configuration list for PBXNativeTarget "neueGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C06D8DFC2B96672400D9F563 /* Debug */,
+				C06D8DFD2B96672400D9F563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0152DB42B96D9FD0030CDF3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+		C0152DBB2B96E8AB0030CDF3 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0152DB52B96D9FD0030CDF3 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0152DB42B96D9FD0030CDF3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		C0152DBC2B96E8AB0030CDF3 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0152DBB2B96E8AB0030CDF3 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C06D8DE52B96672300D9F563 /* Project object */;
+}

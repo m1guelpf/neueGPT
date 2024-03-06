@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct neueGPTApp: App {
+struct neueGPT: App {
 	var body: some Scene {
 		WindowGroup {
 			NavigationStack {

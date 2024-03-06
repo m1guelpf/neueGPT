@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		C0152DB62B96D9FD0030CDF3 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = C0152DB52B96D9FD0030CDF3 /* SwiftUIIntrospect */; };
 		C0152DB82B96E6200030CDF3 /* ThreadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0152DB72B96E6200030CDF3 /* ThreadList.swift */; };
-		C0152DBA2B96E7630030CDF3 /* BottomThreadCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0152DB92B96E7630030CDF3 /* BottomThreadCreator.swift */; };
+		C0152DBA2B96E7630030CDF3 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0152DB92B96E7630030CDF3 /* BottomBar.swift */; };
 		C0152DBD2B96E8AB0030CDF3 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = C0152DBC2B96E8AB0030CDF3 /* OpenAI */; };
 		C0152DBF2B96EA090030CDF3 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0152DBE2B96EA090030CDF3 /* BottomSheet.swift */; };
-		C06D8DF12B96672300D9F563 /* neueGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8DF02B96672300D9F563 /* neueGPTApp.swift */; };
+		C0216C672B97CD10002713EE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0216C662B97CD10002713EE /* CameraView.swift */; };
+		C02DFED42B98359000DC358D /* View+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02DFED32B98359000DC358D /* View+Keyboard.swift */; };
+		C02DFED62B98409E00DC358D /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02DFED52B98409E00DC358D /* DateExt.swift */; };
+		C02DFED82B984AEB00DC358D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02DFED72B984AEB00DC358D /* Helpers.swift */; };
+		C02DFEDA2B984DE500DC358D /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02DFED92B984DE500DC358D /* CameraManager.swift */; };
+		C02DFEDC2B98500D00DC358D /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02DFEDB2B98500D00DC358D /* Method.swift */; };
+		C06D8DF12B96672300D9F563 /* neueGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8DF02B96672300D9F563 /* neueGPT.swift */; };
 		C06D8DF32B96672300D9F563 /* ThreadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8DF22B96672300D9F563 /* ThreadsView.swift */; };
 		C06D8DF52B96672400D9F563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06D8DF42B96672400D9F563 /* Assets.xcassets */; };
 		C06D8DF82B96672400D9F563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06D8DF72B96672400D9F563 /* Preview Assets.xcassets */; };
@@ -24,10 +30,17 @@
 
 /* Begin PBXFileReference section */
 		C0152DB72B96E6200030CDF3 /* ThreadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadList.swift; sourceTree = "<group>"; };
-		C0152DB92B96E7630030CDF3 /* BottomThreadCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomThreadCreator.swift; sourceTree = "<group>"; };
+		C0152DB92B96E7630030CDF3 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		C0152DBE2B96EA090030CDF3 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		C0216C662B97CD10002713EE /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C0216C682B97CF0D002713EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C02DFED32B98359000DC358D /* View+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Keyboard.swift"; sourceTree = "<group>"; };
+		C02DFED52B98409E00DC358D /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		C02DFED72B984AEB00DC358D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C02DFED92B984DE500DC358D /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		C02DFEDB2B98500D00DC358D /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		C06D8DED2B96672300D9F563 /* neueGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neueGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C06D8DF02B96672300D9F563 /* neueGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neueGPTApp.swift; sourceTree = "<group>"; };
+		C06D8DF02B96672300D9F563 /* neueGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neueGPT.swift; sourceTree = "<group>"; };
 		C06D8DF22B96672300D9F563 /* ThreadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsView.swift; sourceTree = "<group>"; };
 		C06D8DF42B96672400D9F563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06D8DF72B96672400D9F563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -50,6 +63,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0216C652B97CCF1002713EE /* ThreadCreator */ = {
+			isa = PBXGroup;
+			children = (
+				C02DFEDB2B98500D00DC358D /* Method.swift */,
+				C0152DB92B96E7630030CDF3 /* BottomBar.swift */,
+				C0216C662B97CD10002713EE /* CameraView.swift */,
+			);
+			path = ThreadCreator;
+			sourceTree = "<group>";
+		};
 		C06D8DE42B96672300D9F563 = {
 			isa = PBXGroup;
 			children = (
@@ -69,10 +92,11 @@
 		C06D8DEF2B96672300D9F563 /* neueGPT */ = {
 			isa = PBXGroup;
 			children = (
+				C0216C682B97CF0D002713EE /* Info.plist */,
 				C06D8DFF2B9668EA00D9F563 /* Models */,
 				C06D8E082B96742800D9F563 /* Support */,
 				C06D8DFE2B9668E100D9F563 /* Views */,
-				C06D8DF02B96672300D9F563 /* neueGPTApp.swift */,
+				C06D8DF02B96672300D9F563 /* neueGPT.swift */,
 				C06D8DF42B96672400D9F563 /* Assets.xcassets */,
 				C06D8DF62B96672400D9F563 /* Preview Content */,
 			);
@@ -107,10 +131,10 @@
 		C06D8E022B966ADB00D9F563 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				C0216C652B97CCF1002713EE /* ThreadCreator */,
 				C06D8E032B966AE700D9F563 /* ThreadRow.swift */,
 				C0152DB72B96E6200030CDF3 /* ThreadList.swift */,
 				C06D8DF22B96672300D9F563 /* ThreadsView.swift */,
-				C0152DB92B96E7630030CDF3 /* BottomThreadCreator.swift */,
 			);
 			path = Threads;
 			sourceTree = "<group>";
@@ -128,6 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				C06D8E092B96743200D9F563 /* ColorExt.swift */,
+				C02DFED32B98359000DC358D /* View+Keyboard.swift */,
+				C02DFED52B98409E00DC358D /* DateExt.swift */,
+				C02DFED72B984AEB00DC358D /* Helpers.swift */,
+				C02DFED92B984DE500DC358D /* CameraManager.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -212,13 +240,19 @@
 			files = (
 				C06D8DF32B96672300D9F563 /* ThreadsView.swift in Sources */,
 				C0152DBF2B96EA090030CDF3 /* BottomSheet.swift in Sources */,
-				C0152DBA2B96E7630030CDF3 /* BottomThreadCreator.swift in Sources */,
+				C0152DBA2B96E7630030CDF3 /* BottomBar.swift in Sources */,
+				C0216C672B97CD10002713EE /* CameraView.swift in Sources */,
+				C02DFED42B98359000DC358D /* View+Keyboard.swift in Sources */,
+				C02DFEDC2B98500D00DC358D /* Method.swift in Sources */,
 				C06D8E0A2B96743200D9F563 /* ColorExt.swift in Sources */,
 				C06D8E012B9668FD00D9F563 /* Thread.swift in Sources */,
 				C06D8E072B96734000D9F563 /* ProgressAwareScrollView.swift in Sources */,
+				C02DFEDA2B984DE500DC358D /* CameraManager.swift in Sources */,
 				C0152DB82B96E6200030CDF3 /* ThreadList.swift in Sources */,
 				C06D8E042B966AE700D9F563 /* ThreadRow.swift in Sources */,
-				C06D8DF12B96672300D9F563 /* neueGPTApp.swift in Sources */,
+				C02DFED82B984AEB00DC358D /* Helpers.swift in Sources */,
+				C06D8DF12B96672300D9F563 /* neueGPT.swift in Sources */,
+				C02DFED62B98409E00DC358D /* DateExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,8 +389,11 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = neueGPT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = neueGPT;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture photos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to transcribe your speech.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -392,8 +429,11 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = neueGPT/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = neueGPT;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture photos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the microphone to transcribe your speech.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

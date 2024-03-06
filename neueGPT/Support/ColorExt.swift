@@ -9,4 +9,8 @@ extension Color {
 	static var mutedSecondary: Color {
 		Color(uiColor: .systemGray2)
 	}
+
+	static var secondaryLabel: Color {
+		Color(uiColor: .secondaryLabel)
+	}
 }

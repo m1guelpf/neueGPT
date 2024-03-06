@@ -3,39 +3,40 @@ import SwiftUI
 struct ThreadList: View {
 	var threads: [Thread]
 
-	@State private var searchText: String = ""
 	@State private var scrollProgress: CGFloat = 0
-
-	var filteredThreads: [Thread] {
-		if searchText.isEmpty {
-			return threads
-		} else {
-			return threads.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
-		}
-	}
 
 	var body: some View {
 		ProgressAwareScrollView(progress: $scrollProgress) {
-			LazyVStack(spacing: 40) {
-				ForEach(filteredThreads) { item in
-					ThreadRow(thread: item)
+			LazyVStack(spacing: 25) {
+				ForEach(threads.groupedByRecency, id: \.0) { period, threads in
+					if period != "Today" {
+						Text(period)
+							.foregroundStyle(.secondary)
+							.font(.footnote.bold())
+					}
+
+					ForEach(threads) { thread in
+						ThreadRow(thread: thread)
+					}
 				}
 			}
 			.safeAreaPadding(.horizontal)
 		}
-		.overlay {
-			VStack {
-				Spacer()
+		.overlay(bottomShadow)
+		.safeAreaPadding(.top, 5)
+	}
 
-				Rectangle()
-					.fill(.linearGradient(colors: [.background.opacity(0), .background.opacity(0.7), .background], startPoint: .top, endPoint: .bottom))
-					.opacity(scrollProgress < 0.99 ? 1 : 0)
-					.animation(.default, value: scrollProgress)
-					.frame(height: 50)
-					.offset(y: 10)
-			}
+	var bottomShadow: some View {
+		VStack {
+			Spacer()
+
+			Rectangle()
+				.fill(.linearGradient(colors: [.background.opacity(0), .background.opacity(0.7), .background], startPoint: .top, endPoint: .bottom))
+				.offset(y: 10)
+				.frame(height: 50)
+				.opacity(scrollProgress < 0.99999 ? 1 : 0)
+				.animation(.default, value: scrollProgress)
 		}
-		.searchable(text: $searchText)
 	}
 }
 

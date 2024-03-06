@@ -90,7 +90,7 @@ struct ProgressAwareScrollView<Content: View>: View {
 	}
 }
 
-extension UIScrollView {
+private extension UIScrollView {
 	var strongDelegate: UIScrollViewDelegate? {
 		get {
 			let key = unsafeBitCast(Selector(#function), to: UnsafeRawPointer.self)

@@ -3,8 +3,6 @@ import SwiftUI
 struct ThreadRow: View {
 	var thread: Thread
 
-	@State private var totalWidth: CGFloat = 0
-
 	var body: some View {
 		HStack {
 			VStack {
@@ -25,12 +23,6 @@ struct ThreadRow: View {
 			Image(systemName: "chevron.right")
 				.foregroundStyle(.secondary)
 				.font(.callout)
-		}.overlay {
-			GeometryReader { geometry in
-				Color.clear.onAppear {
-					totalWidth = geometry.size.width
-				}
-			}
 		}
 	}
 }

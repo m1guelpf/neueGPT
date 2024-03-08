@@ -99,9 +99,11 @@ extension Method? {
 
 	var sheetContent: some View {
 		switch self {
+			case .photos:
+				return AnyView(PhotosView())
 			case .none, .keyboard, .camera:
 				return AnyView(EmptyView())
-			case .photos, .transcribe, .talk:
+			case .transcribe, .talk:
 				return AnyView(
 					Text(self!.helpText!)
 						.foregroundStyle(Color.mutedSecondary)

@@ -6,7 +6,6 @@ struct BottomBar: View {
 	@State private var model: Model = .gpt4
 	@State private var createMethod: Method? = nil
 	@State private var cameraManager = CameraManager()
-	@State private var photosManager = PhotosManager()
 
 	@State private var keyboardShowing = false
 	@FocusState private var queryFocused: Bool
@@ -32,7 +31,6 @@ struct BottomBar: View {
 		ZStack {
 			BottomSheet(show: showingSheetBinding, onClose: { model = .gpt4 }, header: { sheetHeader }, background: { createMethod.sheetBackground }, content: { createMethod.sheetContent })
 				.environment(cameraManager)
-				.environment(photosManager)
 
 			VStack(spacing: 25) {
 				Spacer()
@@ -77,7 +75,6 @@ struct BottomBar: View {
 				withAnimation { createMethod = nil }
 			}
 		}
-		.task { photosManager.fetchAllPhotos() }
 		.task { cameraManager.startOnBackground() }
 	}
 

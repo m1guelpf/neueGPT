@@ -27,7 +27,6 @@
 		C06D8E072B96734000D9F563 /* ProgressAwareScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8E062B96734000D9F563 /* ProgressAwareScrollView.swift */; };
 		C06D8E0A2B96743200D9F563 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D8E092B96743200D9F563 /* ColorExt.swift */; };
 		C073534A2B9ABD00008F0D5B /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07353492B9ABD00008F0D5B /* PhotosView.swift */; };
-		C073534C2B9AC89D008F0D5B /* PhotosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073534B2B9AC89D008F0D5B /* PhotosManager.swift */; };
 		C073534F2B9ACFAB008F0D5B /* FlatButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073534E2B9ACFAB008F0D5B /* FlatButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +51,6 @@
 		C06D8E062B96734000D9F563 /* ProgressAwareScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressAwareScrollView.swift; sourceTree = "<group>"; };
 		C06D8E092B96743200D9F563 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		C07353492B9ABD00008F0D5B /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
-		C073534B2B9AC89D008F0D5B /* PhotosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosManager.swift; sourceTree = "<group>"; };
 		C073534E2B9ACFAB008F0D5B /* FlatButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,7 +162,6 @@
 				C02DFED52B98409E00DC358D /* DateExt.swift */,
 				C02DFED72B984AEB00DC358D /* Helpers.swift */,
 				C02DFED92B984DE500DC358D /* CameraManager.swift */,
-				C073534B2B9AC89D008F0D5B /* PhotosManager.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -249,7 +246,6 @@
 			files = (
 				C06D8DF32B96672300D9F563 /* ThreadsView.swift in Sources */,
 				C0152DBF2B96EA090030CDF3 /* BottomSheet.swift in Sources */,
-				C073534C2B9AC89D008F0D5B /* PhotosManager.swift in Sources */,
 				C0152DBA2B96E7630030CDF3 /* BottomBar.swift in Sources */,
 				C073534A2B9ABD00008F0D5B /* PhotosView.swift in Sources */,
 				C0216C672B97CD10002713EE /* CameraView.swift in Sources */,
